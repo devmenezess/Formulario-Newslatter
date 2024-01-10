@@ -1,0 +1,111 @@
+/* Stilização background */
+
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row; /* Deixar os itens em horizontal */
+    justify-content: space-between;  /* Separar itens entre eles */
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block; /* Para alinhar os itens lado a lado */
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+.conta{
+    border: 2px solid rgb(132, 14, 201); /* Borda */
+    padding: 10px; /* Aumentar o tamanho de dentro para fora */
+    border-radius: 15px; 
+}
+
+.conta:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1{
+    font-weight: 200; /* Para afinar a fonte */
+    gap: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px; /* Tamanho do texto */
+    line-height: 10px; /* Tamanho da linha */
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px; /* Define a largura máxima do texto */
+    font-family: poppinslight;
+}
+
+.final{
+    margin-top: 50px;
+    margin-left: 35px;
+}
+img{
+    margin-top: 70px;
+    margin-left: 45px;
+    width: 580px; /* Tamanho da imagem */
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{ /* Estar chamando apenas o type 'submit' */
+    align-self: center;
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form[type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
